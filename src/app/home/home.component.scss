@@ -5,7 +5,8 @@
     left: 6vw;
     z-index: 1;
     font-size: 48px;
-    font-weight: 700;
+    font-weight: 800;
+    font-family: 'Baloo 2';
 }
 
 .home-container {
@@ -27,6 +28,17 @@
     border-radius: 100%;
 }
 
+.small-circle {
+    width: 206px;
+    height: 206px;
+    position: absolute;
+    bottom: -14vh;
+    left: 25vw;
+    z-index: 1;
+    background: radial-gradient(74.22% 74.22% at 19.79% 22.42%, #FF5959 6.25%, #FF5959 51.56%, #DE0000 100%);
+    border-radius: 100%;
+}
+
 .profile-box {
     z-index: 1;
     display: flex;
@@ -35,7 +47,7 @@
 
 .left-container,
 .right-container {
-    width: 50vw;
+    width: 50%;
     height: 100vh;
     display: flex;
     align-items: center;
@@ -49,7 +61,7 @@
 
     h2 {
         font-family: 'Montserrat';
-        font-size: 64px;
+        font-size: 62px;
         font-weight: 400;
         color: #FF5959;
         margin: 0;
