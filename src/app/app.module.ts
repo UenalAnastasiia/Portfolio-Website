@@ -10,6 +10,10 @@ import { SkillsComponent } from './skills/skills.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
+import { PortfolioWorksComponent } from './portfolio-works/portfolio-works.component';
+import { ProjectSlackComponent } from './works/project-slack/project-slack.component';
+import { ProjectSharkyComponent } from './works/project-sharky/project-sharky.component';
+import { ProjectCrmComponent } from './works/project-crm/project-crm.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +21,11 @@ import { MatIconModule } from '@angular/material/icon';
     HomeComponent,
     NavbarComponent,
     AboutComponent,
-    SkillsComponent
+    SkillsComponent,
+    PortfolioWorksComponent,
+    ProjectSlackComponent,
+    ProjectSharkyComponent,
+    ProjectCrmComponent
   ],
   imports: [
     BrowserModule,

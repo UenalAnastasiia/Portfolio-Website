@@ -1,0 +1,77 @@
+.project-container {
+    display: flex;
+    margin-bottom: 12vh;
+    position: relative;
+}
+
+.middle-circle {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    left: 28vw;
+    top: 0vh;
+    background: radial-gradient(74.22% 74.22% at 19.79% 22.42%, #FF5959 6.25%, #FF5959 51.56%, #DE0000 100%);
+    border-radius: 100%;
+}
+
+.project-img {
+    width: 40%;
+
+    img {
+        width: 500px;
+        border-radius: 10px;
+    }
+}
+
+.project-description {
+    width: 40%;
+    margin-left: 5vw;
+    margin-top: 6vh;
+
+    h3 {
+        font-family: 'Baloo 2';
+        font-style: normal;
+        color: #FF5959;
+        font-weight: 800;
+        font-size: 45px;
+        line-height: 120%;
+    }
+
+    p {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 120%;
+        color: #FF5959;
+    }
+
+    span {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 120%;
+    }
+}
+
+.project-btn-box {
+    display: flex;
+
+    button {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 23px;
+        line-height: 120%;
+        margin-top: 24px;
+        margin-right: 32px;
+        padding: 10px;
+        border: 2px solid #FF5959;
+        border-radius: 10px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}
