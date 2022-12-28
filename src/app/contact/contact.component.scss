@@ -1,0 +1,71 @@
+.contact-container {
+    background: linear-gradient(#FFFFFF, #FFEAEA);
+    height: 90vh;
+}
+
+.contact-header {
+    margin-top: 10vh;
+    margin-left: 8vw;
+    width: 40%;
+    position: relative;
+
+    h2 {
+        font-family: 'Baloo 2';
+        color: #FF5959;
+        font-weight: 800;
+        font-size: 90px;
+        line-height: 120%;
+        margin-top: 0;
+        margin-bottom: 36px;
+    }
+
+    h3 {
+        color: #FF5959;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 120%;
+        margin-bottom: 24px;
+    }
+
+    span {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 120%;
+    }
+}
+
+.span-color {
+    color: #FF5959;
+}
+
+.middle-circle {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 44vh;
+    left: 12vw;
+    z-index: 1;
+    background: radial-gradient(74.22% 74.22% at 19.79% 22.42%, #FF5959 6.25%, #FF5959 51.56%, #DE0000 100%);
+    border-radius: 100%;
+    transform: rotate(81.57deg);
+}
+
+.up-btn {
+    position: absolute;
+    left: 0;
+    top: 80vh;
+
+    button {
+        width: 32px;
+        height: 32px;
+        background: radial-gradient(74.22% 74.22% at 19.79% 22.42%, #FF5959 6.25%, #FF5959 51.56%, #DE0000 100%);
+    }
+
+    mat-icon {
+        margin-top: -24px;
+    }
+}

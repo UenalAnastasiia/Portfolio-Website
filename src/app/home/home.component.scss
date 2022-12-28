@@ -133,6 +133,7 @@
     position: absolute;
     bottom: 391px;
     left: -10vw;
+    z-index: 1;
     $self: &;
     display: inline-flex;
     align-items: center;

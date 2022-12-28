@@ -14,6 +14,7 @@ import { PortfolioWorksComponent } from './portfolio-works/portfolio-works.compo
 import { ProjectSlackComponent } from './works/project-slack/project-slack.component';
 import { ProjectSharkyComponent } from './works/project-sharky/project-sharky.component';
 import { ProjectCrmComponent } from './works/project-crm/project-crm.component';
+import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { ProjectCrmComponent } from './works/project-crm/project-crm.component';
     PortfolioWorksComponent,
     ProjectSlackComponent,
     ProjectSharkyComponent,
-    ProjectCrmComponent
+    ProjectCrmComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
