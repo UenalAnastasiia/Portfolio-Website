@@ -74,6 +74,10 @@
 .project-btn-box {
     display: flex;
 
+    a {
+        margin-right: 32px;
+    }
+
     button {
         font-family: 'Poppins';
         font-style: normal;
@@ -81,7 +85,6 @@
         font-size: 23px;
         line-height: 120%;
         margin-top: 24px;
-        margin-right: 32px;
         padding: 10px;
         border: 2px solid #FF5959;
         border-radius: 10px;

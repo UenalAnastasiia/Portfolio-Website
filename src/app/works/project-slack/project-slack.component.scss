@@ -4,16 +4,6 @@
     position: relative;
 }
 
-.middle-circle {
-    width: 200px;
-    height: 200px;
-    position: absolute;
-    left: -14vw;
-    top: 30vh;
-    background: radial-gradient(74.22% 74.22% at 19.79% 22.42%, #FF5959 6.25%, #FF5959 51.56%, #DE0000 100%);
-    border-radius: 100%;
-}
-
 .project-img {
     width: 40%;
 
@@ -58,6 +48,10 @@
 .project-btn-box {
     display: flex;
 
+    a {
+        margin-right: 32px;
+    }
+    
     button {
         font-family: 'Poppins';
         font-style: normal;
@@ -65,7 +59,6 @@
         font-size: 23px;
         line-height: 120%;
         margin-top: 24px;
-        margin-right: 32px;
         padding: 10px;
         border: 2px solid #FF5959;
         border-radius: 10px;
@@ -74,4 +67,25 @@
             margin-right: 0;
         }
     }
+}
+
+.middle-circle {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    left: 40vw;
+    top: -10vh;
+    background: radial-gradient(74.22% 74.22% at 19.79% 22.42%, #FF5959 6.25%, #FF5959 51.56%, #DE0000 100%);
+    border-radius: 100%;
+}
+
+.big-circle {
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    left: 30vw;
+    top: 35vh;
+    background: radial-gradient(74.22% 74.22% at 19.79% 22.42%, #FF5959 6.25%, #FF5959 51.56%, #DE0000 100%);
+    border-radius: 100%;
+    transform: rotate(81.57deg);
 }
