@@ -1,10 +1,11 @@
 .contact-container {
     background: linear-gradient(#FFFFFF, #FFEAEA);
-    height: 90vh;
+    height: 80vh;
+    display: flex;
 }
 
 .contact-header {
-    margin-top: 10vh;
+    margin-top: 4vh;
     margin-left: 8vw;
     width: 40%;
     position: relative;
@@ -43,21 +44,42 @@
 }
 
 .middle-circle {
-    width: 200px;
-    height: 200px;
+    width: 160px;
+    height: 160px;
     position: absolute;
     top: 44vh;
     left: 12vw;
     z-index: 1;
     background: radial-gradient(74.22% 74.22% at 19.79% 22.42%, #FF5959 6.25%, #FF5959 51.56%, #DE0000 100%);
     border-radius: 100%;
-    transform: rotate(81.57deg);
+}
+
+.big-circle {
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    top: -14vh;
+    right: -6vw;
+    z-index: 1;
+    background: radial-gradient(74.22% 74.22% at 19.79% 22.42%, #FF5959 6.25%, #FF5959 51.56%, #DE0000 100%);
+    border-radius: 100%;
+}
+
+.small-circle {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    right: -5vw;
+    top: 45vh;
+    z-index: 1;
+    background: radial-gradient(74.22% 74.22% at 19.79% 22.42%, #FF5959 6.25%, #FF5959 51.56%, #DE0000 100%);
+    border-radius: 100%;
 }
 
 .up-btn {
     position: absolute;
     left: 0;
-    top: 80vh;
+    top: 70vh;
 
     button {
         width: 32px;
@@ -68,4 +90,60 @@
     mat-icon {
         margin-top: -24px;
     }
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 24vh;
+    margin-right: 8vw;
+    margin-left: 8vw;
+    width: 30%;
+    position: relative;
+
+    textarea {
+        height: 100px;
+        resize: none !important;
+    }
+}
+
+.send-btn-box {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    button {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 23px;
+        line-height: 120%;
+        padding: 10px;
+        border: 2px solid #FF5959;
+        border-radius: 10px;
+        width: fit-content;
+    }
+}
+
+::ng-deep .mat-form-field.mat-focused .mat-form-field-label {
+    color: #DE0000 !important;
+}
+
+::ng-deep .mat-form-field-appearance-fill .mat-form-field-flex {
+    background-color: white;
+    border-radius: 16px !important;
+}
+
+::ng-deep .mat-form-field-appearance-outline .mat-form-field-outline {
+    color: #DE0000;
+}
+
+/* focused color */
+::ng-deep .mat-form-field-appearance-outline.mat-focused .mat-form-field-outline-thick {
+    color: #FF5959;
+}
+
+/* floating label color */
+::ng-deep .mat-form-field-appearance-outline.mat-focused .mat-form-field-label { 
+    color: #FF5959; 
 }

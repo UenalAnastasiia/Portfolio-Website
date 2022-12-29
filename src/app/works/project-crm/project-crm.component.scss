@@ -8,14 +8,26 @@
     width: 100px;
     height: 100px;
     position: absolute;
-    left: 28vw;
-    top: 0vh;
+    left: 40vw;
+    top: -10vh;
     background: radial-gradient(74.22% 74.22% at 19.79% 22.42%, #FF5959 6.25%, #FF5959 51.56%, #DE0000 100%);
     border-radius: 100%;
 }
 
+.big-circle {
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    left: 30vw;
+    top: 35vh;
+    background: radial-gradient(74.22% 74.22% at 19.79% 22.42%, #FF5959 6.25%, #FF5959 51.56%, #DE0000 100%);
+    border-radius: 100%;
+    transform: rotate(81.57deg);
+}
+
 .project-img {
     width: 40%;
+    z-index: 1;
 
     img {
         width: 500px;

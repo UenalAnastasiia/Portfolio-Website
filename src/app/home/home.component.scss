@@ -97,10 +97,22 @@
     display: flex;
     flex-direction: column;
 
-    img {
-        height: 32px;
-        width: 32px;
+    a {
         margin-bottom: 32px;
+
+        button {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: white;
+            height: 26px;
+            width: 26px;
+
+            img {
+                height: 32px;
+                width: 32px;
+            }
+        }
     }
 }
 
@@ -165,7 +177,9 @@
 }
 
 @keyframes animation-line {
-    0%, 100% {
+
+    0%,
+    100% {
         left: 80px;
     }
 
