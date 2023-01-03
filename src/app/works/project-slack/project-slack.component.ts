@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { MouseOverService } from 'src/app/services/mouse-over.service';
 
 @Component({
   selector: 'app-project-slack',
@@ -7,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProjectSlackComponent implements OnInit {
 
-  constructor() { }
+  constructor(public mouseService: MouseOverService) { }
 
   ngOnInit(): void {
   }

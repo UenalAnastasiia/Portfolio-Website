@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { MouseOverService } from 'src/app/services/mouse-over.service';
 
 @Component({
   selector: 'app-project-crm',
@@ -7,9 +8,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProjectCrmComponent implements OnInit {
 
-  constructor() { }
+  constructor(public mouseService: MouseOverService) { }
 
-  ngOnInit(): void {
-  }
+  ngOnInit(): void {}
 
 }

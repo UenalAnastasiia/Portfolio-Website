@@ -28,14 +28,21 @@
     height: max-content;
     display: flex;
 
+    a {
+        margin-right: 24px;
+
+        &:hover {
+            opacity: 0.7;
+        }
+    }
+
     button {
         display: flex;
         justify-content: center;
         align-items: center;
-        background: linear-gradient(128.94deg, #FF5959 -33.96%, #FF5959 36.71%, #DE0000 112.25%);
-        margin-right: 24px;
         height: 26px;
         width: 26px;
+        background: linear-gradient(128.94deg, #FF5959 -33.96%, #FF5959 36.71%, #DE0000 112.25%);
 
         &:last-child {
             margin-right: 0;

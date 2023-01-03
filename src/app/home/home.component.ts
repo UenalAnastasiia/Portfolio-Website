@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { MouseOverService } from '../services/mouse-over.service';
 
 @Component({
   selector: 'app-home',
@@ -7,9 +8,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  constructor() { }
+  constructor(public mouseService: MouseOverService) { }
 
-  ngOnInit(): void {
-  }
+
+  ngOnInit(): void { }
 
 }

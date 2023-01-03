@@ -8,11 +8,10 @@
     font-weight: 800;
     letter-spacing: 6px;
     font-family: 'Baloo 2';
-    filter: drop-shadow(3px 0px 2px #ffffff); 
-    -webkit-box-reflect: below 5px 
-    linear-gradient(to bottom, 
-    rgba(0,0,0,0.0), 
-    rgba(0,0,0,0.6));
+    filter: drop-shadow(3px 0px 2px #ffffff);
+    -webkit-box-reflect: below 5px linear-gradient(to bottom,
+            rgba(0, 0, 0, 0.0),
+            rgba(0, 0, 0, 0.6));
 }
 
 .home-container {
@@ -105,6 +104,7 @@
 
     a {
         margin-bottom: 32px;
+        text-decoration: none;
 
         button {
             display: flex;
@@ -113,6 +113,7 @@
             background: white;
             height: 26px;
             width: 26px;
+
 
             img {
                 height: 32px;
@@ -191,5 +192,36 @@
 
     50% {
         left: 0;
+    }
+}
+
+.link-dialog {
+    position: absolute;
+    bottom: 3vh;
+    right: 14vw;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+    div {
+        display: flex;
+        justify-content: space-around;
+        width: 300px;
+        margin-left: -16px;
+        margin-right: -16px;
+    }
+
+    button {
+        margin-top: 8px;
+        width: 135px;
+    }
+
+    img {
+        width: 400px;
+        margin-top: -16px;
+        margin-left: -16px;
+        margin-right: -16px;
+        border-radius: 6px;
     }
 }

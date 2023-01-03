@@ -79,3 +79,41 @@
         }
     }
 }
+
+.link-dialog {
+    position: absolute;
+    bottom: 10vh;
+    right: 24vw;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background: #FF5959;
+
+    div {
+        display: flex;
+        justify-content: space-around;
+        width: 300px;
+        margin-left: -16px;
+        margin-right: -16px;
+    }
+
+    button {
+        margin-top: 8px;
+        width: 135px;
+        color: #FF5959;
+        background: white;
+
+        &:hover {
+            opacity: 0.7;
+        }
+    }
+
+    img {
+        width: 400px;
+        margin-top: -16px;
+        margin-left: -16px;
+        margin-right: -16px;
+        border-radius: 6px;
+    }
+}

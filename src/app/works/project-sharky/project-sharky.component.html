@@ -6,11 +6,29 @@
         <p>JavaScript | HTML | CSS</p>
         <span>Swimm with Sharky throw game based on object-oriented approach. Help Sharky to find coins and stay healthy so to fight against the angry endboss.</span>
         <div class="project-btn-box">
-            <a href="" target="_blank"><button mat-stroked-button color="warn">Live Test</button></a>
-            <a href="https://github.com/UenalAnastasiia/Sharky" target="_blank"><button mat-stroked-button color="warn">GitHub</button></a>
-            <a href=""><button mat-stroked-button color="warn">Demo Video</button></a>
+            <a href="https://@anastasiia-uenal.developerakademie.net/sharky/index.html" target="_blank"
+            (mouseenter)="mouseService.showLinkbyMouseOver('https://@anastasiia-uenal.developerakademie.net/sharky/index.html', 'assets/img/sharky_screen.PNG', 'sharky')">
+                <button mat-stroked-button color="warn">Live Test</button>
+            </a>
+
+            <a href="https://github.com/UenalAnastasiia/Sharky" target="_blank"
+            (mouseenter)="mouseService.showLinkbyMouseOver('https://github.com/UenalAnastasiia/Sharky', 'assets/img/sharkygit_screen.PNG', 'sharky')">
+                <button mat-stroked-button color="warn">GitHub</button>
+            </a>
+
+            <a href="" (mouseenter)="mouseService.showLinkDialog = false">
+                <button mat-stroked-button color="warn">Demo Video</button>
+            </a>
         </div>
     </div>
+
+    <mat-card *ngIf="mouseService.showLinkDialog && mouseService.name == 'sharky'" class="link-dialog" (mouseleave)="mouseService.showLinkDialog = false">
+        <img src="{{ mouseService.linkImg }}" alt="">
+        <div>
+            <a href="{{ mouseService.linkURL }}"><button mat-stroked-button color="warn">Open here</button></a>
+            <a href="{{ mouseService.linkURL }}" target="_blank"><button mat-stroked-button color="warn">Open in new tab</button></a>
+        </div>
+    </mat-card>
 
     <div class="project-img">
         <img src="assets/img/sharky.png">

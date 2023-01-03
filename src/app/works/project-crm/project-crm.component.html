@@ -9,10 +9,28 @@
         <p>Angular | TypeScript | Firebase | Material Design</p>
         <span>An easy CRM Tool for small businesses. Create new contacts, add tasks and stay organized.</span>
         <div class="project-btn-box">
-            <a href=""><button mat-stroked-button color="warn">Live Test</button></a>
-            <a href="https://github.com/UenalAnastasiia/Simple-CRM" target="_blank"><button mat-stroked-button color="warn">GitHub</button></a>
-            <a href=""><button mat-stroked-button color="warn">Demo Video</button></a>
+            <a href="https://ua-simple-crm.web.app/home" target="_blank"
+            (mouseenter)="mouseService.showLinkbyMouseOver('https://ua-simple-crm.web.app/home', 'assets/img/crm_screen.PNG', 'crm')">
+                <button mat-stroked-button color="warn">Live Test</button>
+            </a>
+
+            <a href="https://github.com/UenalAnastasiia/Simple-CRM" target="_blank"
+            (mouseenter)="mouseService.showLinkbyMouseOver('https://github.com/UenalAnastasiia/Simple-CRM', 'assets/img/crmgit_screen.PNG', 'crm')">
+                <button mat-stroked-button color="warn">GitHub</button>
+            </a>
+
+            <a href="" (mouseenter)="mouseService.showLinkDialog = false">
+                <button mat-stroked-button color="warn">Demo Video</button>
+            </a>
         </div>
+
+        <mat-card *ngIf="mouseService.showLinkDialog && mouseService.name == 'crm'" class="link-dialog" (mouseleave)="mouseService.showLinkDialog = false">
+            <img src="{{ mouseService.linkImg }}" alt="">
+            <div>
+                <a href="{{ mouseService.linkURL }}"><button mat-stroked-button color="warn">Open here</button></a>
+                <a href="{{ mouseService.linkURL }}" target="_blank"><button mat-stroked-button color="warn">Open in new tab</button></a>
+            </div>
+        </mat-card>
     </div>
 </div>
 
