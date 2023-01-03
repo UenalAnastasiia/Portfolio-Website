@@ -123,6 +123,10 @@
     }
 }
 
+.relative {
+    position: relative;
+}
+
 .scroll-btn-box {
     position: absolute;
     bottom: 0;
@@ -140,8 +144,8 @@
         padding: 6px;
         transform: rotate(90deg) translate3d(-300px, 0, 0);
         position: absolute;
-        left: 16vh;
-        top: 38vh;
+        right: -2vw;
+        top: 288px;
         color: #FF5959;
     }
 }
