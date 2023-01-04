@@ -15,11 +15,10 @@
 }
 
 .project-img {
-  width: 40%;
   z-index: 1;
 
   img {
-    width: 500px;
+    width: 600px;
     border-radius: 10px;
 
     &:hover {
@@ -32,7 +31,7 @@
 .project-description {
   width: 40%;
   margin-left: 5vw;
-  margin-top: 6vh;
+  margin-top: 14vh;
 
   h3 {
     font-family: 'Baloo 2';
@@ -88,7 +87,7 @@
 .link-dialog {
   position: absolute;
   bottom: 12vh;
-  right: 24vw;
+  right: 20vw;
   z-index: 1;
   display: flex;
   align-items: center;

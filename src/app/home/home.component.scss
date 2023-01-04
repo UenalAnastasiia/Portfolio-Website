@@ -63,7 +63,7 @@
 .description {
     display: flex;
     flex-direction: column;
-    margin-left: -6vw;
+    margin-left: -2vw;
     margin-top: -12vh;
 
     h2 {
@@ -72,6 +72,8 @@
         font-weight: 400;
         color: #FF5959;
         margin: 0;
+        padding-bottom: 16px;
+        margin-top: 24px;
     }
 
     h1 {
@@ -149,7 +151,7 @@
         padding: 6px;
         transform: rotate(90deg) translate3d(-300px, 0, 0);
         position: absolute;
-        right: -2vw;
+        right: calc(-2vw - 10px);
         top: 288px;
         color: #FF5959;
     }
@@ -210,7 +212,7 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    
+
     div {
         display: flex;
         justify-content: space-around;

@@ -1,5 +1,5 @@
 .skills-icons {
-    height: 80vh;
+    height: 650px;
     width: 100%;
     background: linear-gradient(128.94deg, #FF5959 -33.96%, #FF5959 36.71%, #DE0000 112.25%);
     display: flex;
@@ -27,8 +27,7 @@ h2 {
     display: flex;
     flex-wrap: wrap;
     margin-top: 50px;
-    width: 60%;
-    max-width: 900px;
+    max-width: 995px;
 }
 
 .skill-box {
@@ -40,9 +39,9 @@ h2 {
     border-right: 1px solid #d6d6d6;
     border-bottom: 1px solid #d6d6d6;
     border-radius: 10px;
-    margin-bottom: 58px;
-    margin-left: 14px;
-    margin-right: 14px;
+    margin-bottom: 74px;
+    margin-left: 26px;
+    margin-right: 26px;
     padding: 10px;
     box-shadow: -2px 0px 6px 0px rgb(75 74 74 / 68%);
     position: relative;
