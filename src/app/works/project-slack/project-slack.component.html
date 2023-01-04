@@ -9,18 +9,82 @@
         <p>Angular | TypeScript | Firebase | SCSS</p>
         <span>Message manager inspired by the Slack. Create and comment threads, chat and communicate with other users in the App.</span>
         <div class="project-btn-box">
-            <a href="https://ua-slack-clone.web.app/login" target="_blank"
-            (mouseenter)="mouseService.showLinkbyMouseOver('https://ua-slack-clone.web.app/login', 'assets/img/slack_screen.PNG', 'slack')">
-                <button mat-stroked-button color="warn">Live Test</button>
+            <a href="https://ua-slack-clone.web.app/login" target="_blank">
+                <button mat-stroked-button color="warn" class="blob-btn" 
+                (mouseenter)="mouseService.showLinkbyMouseOver('https://ua-slack-clone.web.app/login', 'assets/img/slack_screen.PNG', 'slack')">
+                    Live Test
+                    <span class="blob-btn__inner">
+                        <span class="blob-btn__blobs">
+                            <span class="blob-btn__blob"></span>
+                            <span class="blob-btn__blob"></span>
+                            <span class="blob-btn__blob"></span>
+                            <span class="blob-btn__blob"></span>
+                        </span>
+                    </span>
+                </button>
+
+                <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+                    <defs>
+                        <filter id="goo">
+                            <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="10"></feGaussianBlur>
+                            <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 21 -7"
+                                result="goo"></feColorMatrix>
+                            <feBlend in2="goo" in="SourceGraphic" result="mix"></feBlend>
+                        </filter>
+                    </defs>
+                </svg>
             </a>
 
-            <a href="https://github.com/UenalAnastasiia/Slack-Clone" target="_blank"
-            (mouseenter)="mouseService.showLinkbyMouseOver('https://github.com/UenalAnastasiia/Slack-Clone', 'assets/img/slackgit_screen.PNG', 'slack')">
-                <button mat-stroked-button color="warn">GitHub</button>
+            <a href="https://github.com/UenalAnastasiia/Slack-Clone" target="_blank">
+                <button mat-stroked-button color="warn" class="blob-btn"
+                (mouseenter)="mouseService.showLinkbyMouseOver('https://github.com/UenalAnastasiia/Slack-Clone', 'assets/img/slackgit_screen.PNG', 'slack')">
+                    GitHub
+                    <span class="blob-btn__inner">
+                        <span class="blob-btn__blobs">
+                            <span class="blob-btn__blob"></span>
+                            <span class="blob-btn__blob"></span>
+                            <span class="blob-btn__blob"></span>
+                            <span class="blob-btn__blob"></span>
+                        </span>
+                    </span>
+                </button>
+
+                <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+                    <defs>
+                        <filter id="goo">
+                            <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="10"></feGaussianBlur>
+                            <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 21 -7"
+                                result="goo"></feColorMatrix>
+                            <feBlend in2="goo" in="SourceGraphic" result="mix"></feBlend>
+                        </filter>
+                    </defs>
+                </svg>
             </a>
 
-            <a href="" (mouseenter)="mouseService.showLinkDialog = false">
-                <button mat-stroked-button color="warn">Demo Video</button>
+            <a href="">
+                <button mat-stroked-button color="warn" class="blob-btn"
+                (mouseenter)="mouseService.showLinkDialog = false">
+                    Demo Video
+                    <span class="blob-btn__inner">
+                        <span class="blob-btn__blobs">
+                            <span class="blob-btn__blob"></span>
+                            <span class="blob-btn__blob"></span>
+                            <span class="blob-btn__blob"></span>
+                            <span class="blob-btn__blob"></span>
+                        </span>
+                    </span>
+                </button>
+
+                <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+                    <defs>
+                        <filter id="goo">
+                            <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="10"></feGaussianBlur>
+                            <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 21 -7"
+                                result="goo"></feColorMatrix>
+                            <feBlend in2="goo" in="SourceGraphic" result="mix"></feBlend>
+                        </filter>
+                    </defs>
+                </svg>
             </a>
         </div>
     </div>

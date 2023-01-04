@@ -85,6 +85,11 @@
         width: 32px;
         height: 32px;
         background: radial-gradient(74.22% 74.22% at 19.79% 22.42%, #FF5959 6.25%, #FF5959 51.56%, #DE0000 100%);
+
+        &:hover {
+            transform: scale3d(1.5, 1.5, 1.5);
+            transition: 225ms ease-in-out;
+        }
     }
 
     mat-icon {
@@ -111,18 +116,82 @@
     width: 100%;
     display: flex;
     justify-content: center;
+}
 
-    button {
-        font-family: 'Poppins';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 23px;
-        line-height: 120%;
-        padding: 10px;
-        border: 2px solid #FF5959;
-        border-radius: 10px;
-        width: fit-content;
+.send-btn {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 23px;
+    line-height: 120%;
+    padding: 10px;
+    border: 2px solid #FF5959;
+    border-radius: 10px;
+    width: fit-content;
+
+    &:hover {
+        background: #FF5959;
+        color: #FFFFFF;
+        transform: scale(1.1);
+        transition: transform 300ms ease-in-out;
     }
+
+    span {
+        opacity: 1;
+        visibility: visible;
+        transition: all .35s;
+    }
+}
+
+.send-btn-hide {
+    visibility: hidden;
+}
+
+.success {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    z-index: 1;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .35s;
+    border-radius: 100%;
+    width: 40px;
+    height: 40px;
+    margin-left: 10px;
+    border: 2px solid #FF5959;
+
+    svg {
+        width: 20px;
+        height: 20px;
+        fill: yellowgreen;
+        transform-origin: 50% 50%;
+        transform: translateY(-50%) rotate(0deg) scale(0);
+        transition: all .35s;
+    }
+}
+
+.send-btn.is_active {
+    width: 40px;
+    height: 40px;
+}
+
+.send-btn.is_active .success {
+    opacity: 1;
+    visibility: visible;
+}
+
+.send-btn.is_active .success svg {
+    margin-top: 50%;
+    transform: translateY(-50%) rotate(720deg) scale(1);
+}
+
+.send-btn.is_active span {
+    opacity: 0;
+    visibility: hidden;
 }
 
 ::ng-deep .mat-form-field.mat-focused .mat-form-field-label {
@@ -144,6 +213,12 @@
 }
 
 /* floating label color */
-::ng-deep .mat-form-field-appearance-outline.mat-focused .mat-form-field-label { 
-    color: #FF5959; 
+::ng-deep .mat-form-field-appearance-outline.mat-focused .mat-form-field-label {
+    color: #FF5959;
+}
+
+::ng-deep .mat-snack-bar-container {
+    background: #4b9a26 !important;
+    color: white !important;
+    min-width: 220px !important;
 }

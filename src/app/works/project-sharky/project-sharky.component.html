@@ -6,18 +6,82 @@
         <p>JavaScript | HTML | CSS</p>
         <span>Swimm with Sharky throw game based on object-oriented approach. Help Sharky to find coins and stay healthy so to fight against the angry endboss.</span>
         <div class="project-btn-box">
-            <a href="https://@anastasiia-uenal.developerakademie.net/sharky/index.html" target="_blank"
-            (mouseenter)="mouseService.showLinkbyMouseOver('https://@anastasiia-uenal.developerakademie.net/sharky/index.html', 'assets/img/sharky_screen.PNG', 'sharky')">
-                <button mat-stroked-button color="warn">Live Test</button>
+            <a href="https://@anastasiia-uenal.developerakademie.net/sharky/index.html" target="_blank">
+                <button mat-stroked-button color="warn" class="blob-btn"
+                (mouseenter)="mouseService.showLinkbyMouseOver('https://@anastasiia-uenal.developerakademie.net/sharky/index.html', 'assets/img/sharky_screen.PNG', 'sharky')">
+                    Live Test
+                    <span class="blob-btn__inner">
+                        <span class="blob-btn__blobs">
+                            <span class="blob-btn__blob"></span>
+                            <span class="blob-btn__blob"></span>
+                            <span class="blob-btn__blob"></span>
+                            <span class="blob-btn__blob"></span>
+                        </span>
+                    </span>
+                </button>
+
+                <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+                    <defs>
+                        <filter id="goo">
+                            <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="10"></feGaussianBlur>
+                            <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 21 -7"
+                                result="goo"></feColorMatrix>
+                            <feBlend in2="goo" in="SourceGraphic" result="mix"></feBlend>
+                        </filter>
+                    </defs>
+                </svg>
             </a>
 
-            <a href="https://github.com/UenalAnastasiia/Sharky" target="_blank"
-            (mouseenter)="mouseService.showLinkbyMouseOver('https://github.com/UenalAnastasiia/Sharky', 'assets/img/sharkygit_screen.PNG', 'sharky')">
-                <button mat-stroked-button color="warn">GitHub</button>
+            <a href="https://github.com/UenalAnastasiia/Sharky" target="_blank">
+                <button mat-stroked-button color="warn" class="blob-btn"
+                (mouseenter)="mouseService.showLinkbyMouseOver('https://github.com/UenalAnastasiia/Sharky', 'assets/img/sharkygit_screen.PNG', 'sharky')">
+                    GitHub
+                    <span class="blob-btn__inner">
+                        <span class="blob-btn__blobs">
+                            <span class="blob-btn__blob"></span>
+                            <span class="blob-btn__blob"></span>
+                            <span class="blob-btn__blob"></span>
+                            <span class="blob-btn__blob"></span>
+                        </span>
+                    </span>
+                </button>
+
+                <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+                    <defs>
+                        <filter id="goo">
+                            <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="10"></feGaussianBlur>
+                            <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 21 -7"
+                                result="goo"></feColorMatrix>
+                            <feBlend in2="goo" in="SourceGraphic" result="mix"></feBlend>
+                        </filter>
+                    </defs>
+                </svg>
             </a>
 
-            <a href="" (mouseenter)="mouseService.showLinkDialog = false">
-                <button mat-stroked-button color="warn">Demo Video</button>
+            <a href="">
+                <button mat-stroked-button color="warn" class="blob-btn"
+                (mouseenter)="mouseService.showLinkDialog = false">
+                    Demo Video
+                    <span class="blob-btn__inner">
+                        <span class="blob-btn__blobs">
+                            <span class="blob-btn__blob"></span>
+                            <span class="blob-btn__blob"></span>
+                            <span class="blob-btn__blob"></span>
+                            <span class="blob-btn__blob"></span>
+                        </span>
+                    </span>
+                </button>
+
+                <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+                    <defs>
+                        <filter id="goo">
+                            <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="10"></feGaussianBlur>
+                            <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 21 -7"
+                                result="goo"></feColorMatrix>
+                            <feBlend in2="goo" in="SourceGraphic" result="mix"></feBlend>
+                        </filter>
+                    </defs>
+                </svg>
             </a>
         </div>
     </div>
