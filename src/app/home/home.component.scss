@@ -170,6 +170,11 @@
     text-decoration: none;
     transform: rotate(-90deg) translate3d(-300px, 0, 0);
 
+    @media (min-height: 900px) {
+        bottom: 436px;
+        left: -14vw;
+    }
+
     &__line {
         position: relative;
         margin-left: -14px;
@@ -180,6 +185,10 @@
         overflow: hidden;
         z-index: 1;
 
+        @media (min-height: 900px) {
+            width: 240px;
+        }
+
         &::after {
             content: '';
             display: block;
@@ -189,6 +198,11 @@
             height: 2px;
             background: #FF5959;
             animation: animation-line 3s linear infinite;
+
+            @media (min-height: 900px) {
+                left: 200px;
+                width: 160px;
+            }
         }
     }
 }
@@ -198,6 +212,10 @@
     0%,
     100% {
         left: 80px;
+
+        @media (min-height: 900px) {
+            left: 240px;
+        }
     }
 
     50% {

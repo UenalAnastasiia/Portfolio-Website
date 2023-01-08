@@ -105,6 +105,11 @@
   flex-direction: column;
   background: #FF5959;
 
+  @media (min-width: 1800px) {
+    bottom: 10vh;
+    right: 33vw;
+  }
+
   div {
     display: flex;
     justify-content: space-around;

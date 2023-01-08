@@ -90,18 +90,11 @@
         &:hover {
             transform: scale3d(1.5, 1.5, 1.5);
             transition: 225ms ease-in-out;
-            background: white;
         }
     }
 
     mat-icon {
         margin-top: -24px;
-    }
-}
-
-::ng-deep .mat-button-wrapper {
-    &:hover {
-        color: #FF5959;
     }
 }
 
