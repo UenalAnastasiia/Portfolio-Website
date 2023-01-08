@@ -3,8 +3,9 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 80vh;
+    height: 90vh;
     position: relative;
+    cursor: context-menu;
 }
 
 .left-box {
@@ -83,8 +84,8 @@
     width: 82px;
     height: 82px;
     position: absolute;
-    right: 25vw;
-    top: 10vh;
+    right: 12vw;
+    top: 6vh;
     z-index: 1;
     background: radial-gradient(74.22% 74.22% at 19.79% 22.42%, #FF5959 6.25%, #FF5959 51.56%, #DE0000 100%);
     border-radius: 100%;

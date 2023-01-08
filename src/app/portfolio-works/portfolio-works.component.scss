@@ -3,6 +3,7 @@
     margin-left: 8vw;
     width: 50%;
     position: relative;
+    cursor: context-menu;
 
     h2 {
         font-family: 'Baloo 2';
@@ -20,6 +21,21 @@
         font-weight: 400;
         font-size: 23px;
         line-height: 120%;
+    }
+
+    a {
+        text-decoration: none;
+        color: #FF5959;
+        font-weight: 700;
+        background-image: linear-gradient(#FF5959, #FF5959);
+        background-size: 0 5px, auto;
+        background-repeat: no-repeat;
+        background-position: center bottom;
+        transition: all .2s ease-out;
+
+        &:hover {
+            background-size: 100% 2px, auto;
+        }
     }
 }
 
@@ -49,4 +65,5 @@
 .works-box {
     margin-top: 10vh;
     margin-left: 8vw;
+    cursor: context-menu;
 }
