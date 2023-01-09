@@ -21,6 +21,9 @@ import { MatInputModule } from '@angular/material/input';
 import { FooterComponent } from './footer/footer.component';
 import { MatCardModule } from '@angular/material/card';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatListModule } from '@angular/material/list';
 
 @NgModule({
   declarations: [
@@ -46,7 +49,10 @@ import { MatSnackBarModule } from '@angular/material/snack-bar';
     MatInputModule,
     HttpClientModule,
     MatCardModule,
-    MatSnackBarModule
+    MatSnackBarModule,
+    MatSidenavModule,
+    MatToolbarModule,
+    MatListModule
   ],
   providers: [],
   bootstrap: [AppComponent]

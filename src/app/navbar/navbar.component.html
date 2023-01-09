@@ -3,3 +3,16 @@
         <a href="#skills">Skills set</a>
         <a href="#myworks">My Work</a>
 </header>
+
+<div class="burger-menu example-icon" [class.active]="active" (click)="menuToogle()">
+        <div class="burger-container">
+                <div class="burger-inner"></div>
+        </div>
+</div>
+
+<div *ngIf="active" class="example-container">
+        <a href="#aboutme" (click)="menuToogle()">About me</a>
+        <a href="#skills" (click)="menuToogle()">Skills set</a>
+        <a href="#myworks" (click)="menuToogle()">My Work</a>
+        <a href="#contact" (click)="menuToogle()">Contact</a>
+</div>
