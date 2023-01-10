@@ -38,14 +38,19 @@ a {
         background-size: 100% 2px, auto;
         font-weight: 700;
     }
+
+    @media (max-width: 1000px) {
+        margin-left: 0;
+    }
 }
 
 .example-container {
-    height: 95vh;
-    width: 550px;
+    height: 100vh;
+    width: 100vw;
+    max-width: 100%;
     position: absolute;
     right: 0;
-    top: 36px;
+    top: 0;
     background: linear-gradient(#FFFFFF, #FFEAEA);
     z-index: 9999;
     display: flex;
@@ -76,10 +81,14 @@ $burgerBarColor: #FF5959;
             position: absolute;
             width: $burgerWidth - 2 * $burgerBarHeight;
             right: 24px;
-            top: 24px;
+            top: 36px;
             z-index: 2;
             border: $burgerBarHeight solid $burgerBarColor;
             transition: border-color .2s ease-in .2s;
+
+            @media (max-width: 650px) {
+                right: 16px;
+            }
 
             &::before {
                 position: absolute;
@@ -125,5 +134,21 @@ $burgerBarColor: #FF5959;
     position: absolute;
     right: 0;
     top: 0;
+    z-index: 3;
+}
+
+.logo-h1 {
+    position: absolute;
+    top: 26px;
+    color: #FF5959;
+    left: 10vw;
     z-index: 1;
+    font-size: 56px;
+    font-weight: 800;
+    letter-spacing: 6px;
+    font-family: 'Baloo 2';
+    filter: drop-shadow(3px 0px 2px #FF5959);
+    -webkit-box-reflect: below 5px linear-gradient(to bottom,
+            rgba(0, 0, 0, 0.0),
+            rgba(0, 0, 0, 0.6));
 }

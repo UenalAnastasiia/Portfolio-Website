@@ -1,0 +1,127 @@
+.big-circle {
+    width: 860px;
+    height: 860px;
+    position: absolute;
+    top: -102px;
+    left: -154px;
+    background: radial-gradient(74.22% 74.22% at 19.79% 22.42%, #FF5959 6.25%, #FF5959 51.56%, #DE0000 100%);
+    border-radius: 100%;
+
+    @media (max-width: 1500px) {
+        top: -62px;
+        left: -222px;
+    }
+
+    @media (max-width: 1400px) {
+        width: 800px;
+        height: 800px;
+
+    }
+
+    @media (max-width: 1100px) {
+        width: 750px;
+        height: 750px;
+        top: -32px;
+    }
+
+    @media (max-height: 800px) {
+        top: -160px;
+    }
+
+    @media (max-width: 1000px) {
+        width: 900px;
+        height: 900px;
+        top: -230px;
+        left: -80px;
+    }
+
+    @media (max-width: 850px) {
+        width: 800px;
+        height: 800px;
+        top: -180px;
+        left: -100px;
+    }
+
+    @media (max-width: 750px) {
+        left: -160px;
+    }
+
+    @media (max-width: 685px) {
+        width: 700px;
+        height: 700px;
+        top: -180px;
+        left: -140px;
+    }
+
+    @media (max-width: 600px) {
+        top: -120px;
+        left: unset;
+        right: 10px;
+    }
+}
+
+.small-circle {
+    width: 260px;
+    height: 260px;
+    position: absolute;
+    bottom: -120px;
+    left: 460px;
+    z-index: 1;
+    background: radial-gradient(74.22% 74.22% at 19.79% 22.42%, #FF5959 6.25%, #FF5959 51.56%, #DE0000 100%);
+    border-radius: 100%;
+    transform: rotate(81.57deg);
+
+    @media (max-width: 1100px) {
+        left: 400px;
+    }
+
+    @media (max-height: 800px) {
+        left: 370px;
+    }
+
+    @media (max-width: 1000px) and (min-height: 800px) {
+        left: unset;
+        right: 200px;
+        width: 170px;
+        height: 170px;
+        position: absolute;
+        bottom: -80px;
+    }
+
+    @media (max-width: 850px) and (min-height: 800px) {
+        right: 100px;
+    }
+
+    @media (max-width: 750px) and (min-height: 800px) {
+        right: 40px;
+    }
+
+    @media (max-width: 450px) and (min-height: 800px) {
+        right: 14px;
+    }
+
+    @media (max-width: 1000px) and (max-height: 800px) {
+        left: unset;
+        right: 250px;
+        width: 170px;
+        height: 170px;
+        position: absolute;
+        bottom: -80px;
+    }
+
+    @media (max-width: 850px) and (max-height: 800px) {
+        right: 140px;
+    }
+
+    @media (max-width: 750px) and (max-height: 800px) {
+        right: 120px;
+    }
+
+    @media (max-width: 550px) and (max-height: 800px) {
+        right: 60px;
+    }
+
+    @media (max-width: 450px) and (max-height: 800px) {
+        right: 30px;
+    }
+}
