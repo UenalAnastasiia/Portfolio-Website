@@ -20,6 +20,7 @@ h2 {
     line-height: 120%;
     margin: 0px;
     text-align: center;
+    cursor: context-menu;
 
     @media (max-width: 1000px) {
         font-size: 82px;
@@ -49,6 +50,7 @@ h2 {
 }
 
 .skill-box {
+    cursor: context-menu;
     display: flex;
     flex-direction: column;
     height: 50px;

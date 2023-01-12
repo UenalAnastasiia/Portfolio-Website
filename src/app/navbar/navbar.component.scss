@@ -46,7 +46,8 @@ a {
 
 .example-container {
     opacity: 0;
-    -webkit-transition: opacity 750ms;
+    visibility: hidden;
+    transition: opacity 750ms;
     height: 100vh;
     width: 100vw;
     max-width: 100%;
@@ -63,6 +64,7 @@ a {
 
 .opacity-animation {
     opacity: 1;
+    visibility: visible;
 }
 
 $burgerWidth: 24px;

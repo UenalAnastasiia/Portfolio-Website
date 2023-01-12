@@ -55,6 +55,8 @@
 
   img {
     width: 600px;
+    border-top-left-radius: 60px;
+    border-top-right-radius: 60px;
 
     @media (max-width: 1320px) {
       padding-bottom: 28px;
