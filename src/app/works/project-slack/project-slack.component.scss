@@ -7,7 +7,6 @@
 .project-img {
   img {
     width: 600px;
-    border-radius: 10px;
 
     &:hover {
       transform: scale3d(1.1, 1.1, 1.1);
@@ -20,6 +19,10 @@
   width: 40%;
   margin-left: 5vw;
   margin-top: 14vh;
+
+  @media (min-height: 800px) {
+    margin-top: 10vh;
+  }
 
   h3 {
     font-family: 'Baloo 2';
@@ -80,6 +83,14 @@
   top: -10vh;
   background: radial-gradient(74.22% 74.22% at 19.79% 22.42%, #FF5959 6.25%, #FF5959 51.56%, #DE0000 100%);
   border-radius: 100%;
+
+  @media (max-width: 1320px) {
+    width: 40px;
+    height: 40px;
+    left: unset;
+    right: 40vw;
+    top: 10vh;
+  }
 }
 
 .big-circle {
@@ -91,6 +102,33 @@
   background: radial-gradient(74.22% 74.22% at 19.79% 22.42%, #FF5959 6.25%, #FF5959 51.56%, #DE0000 100%);
   border-radius: 100%;
   transform: rotate(81.57deg);
+
+  @media (max-width: 1320px) {
+    left: 2vw;
+    top: 70vh;
+  }
+
+  @media (max-width: 900px) {
+    width: 80px;
+    height: 80px;
+    z-index: 2;
+  }
+
+  @media (max-width: 700px) {
+    width: 50px;
+    height: 50px;
+    top: 65vh;
+  }
+
+  @media (max-width: 400px) {
+    width: 30px;
+    height: 30px;
+    top: 42vh;
+  }
+
+  @media (max-width: 350px) {
+    top: 46vh;
+  }
 }
 
 .link-dialog {
