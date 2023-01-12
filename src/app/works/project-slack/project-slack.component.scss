@@ -2,6 +2,10 @@
   display: flex;
   margin-bottom: 12vh;
   position: relative;
+
+  @media (max-width: 1320px) {
+    margin-bottom: 8vh !important;
+  }
 }
 
 .project-img {
@@ -89,7 +93,7 @@
     height: 40px;
     left: unset;
     right: 40vw;
-    top: 10vh;
+    top: 7vh;
   }
 }
 
