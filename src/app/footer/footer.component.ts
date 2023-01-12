@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
+import { ImprintComponent } from '../imprint/imprint.component';
 
 @Component({
   selector: 'app-footer',
@@ -7,8 +9,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FooterComponent implements OnInit {
 
-  constructor() { }
+  constructor(public dialog: MatDialog) { }
 
   ngOnInit(): void {
+  }
+
+
+  openImprint() {
+    this.dialog.open(ImprintComponent);
   }
 }

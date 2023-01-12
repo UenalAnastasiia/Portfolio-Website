@@ -24,6 +24,8 @@ import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatListModule } from '@angular/material/list';
+import { ImprintComponent } from './imprint/imprint.component';
+import { MatDialogModule } from '@angular/material/dialog';
 
 @NgModule({
   declarations: [
@@ -37,7 +39,8 @@ import { MatListModule } from '@angular/material/list';
     ProjectSharkyComponent,
     ProjectCrmComponent,
     ContactComponent,
-    FooterComponent
+    FooterComponent,
+    ImprintComponent
   ],
   imports: [
     BrowserModule,
@@ -52,7 +55,8 @@ import { MatListModule } from '@angular/material/list';
     MatSnackBarModule,
     MatSidenavModule,
     MatToolbarModule,
-    MatListModule
+    MatListModule,
+    MatDialogModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,0 +1,39 @@
+.imprint-box {
+    padding: 12px;
+    font-size: 16px;
+    position: relative;
+
+    h1 {
+        font-family: "Baloo 2";
+        color: #FF5959;
+        font-weight: 800;
+        font-size: 56px;
+        line-height: 120%;
+        margin: 0;
+
+        @media (max-width: 350px) {
+            font-size: 42px;
+        }
+    }
+
+    p {
+        font-style: italic;
+        font-weight: 500;
+    }
+
+    a {
+        color: #FF5959;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    button {
+        position: absolute;
+        top: -16px;
+        right: -16px;
+        color: #FF5959;
+        cursor: pointer;
+    }
+}
