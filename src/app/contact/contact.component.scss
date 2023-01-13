@@ -66,6 +66,20 @@
 
 .span-color {
     color: #FF5959;
+
+    a {
+        color: #FF5959;
+        text-decoration: none;
+        background-image: linear-gradient(#FF5959, #FF5959);
+        background-size: 0 5px, auto;
+        background-repeat: no-repeat;
+        background-position: center bottom;
+        transition: all .2s ease-out;
+
+        &:hover {
+            background-size: 100% 2px, auto;
+        }
+    }
 }
 
 .middle-circle {
@@ -101,7 +115,7 @@
     height: 120px;
     position: absolute;
     top: -16vh;
-    right: -6vw;
+    right: 2vw;
     z-index: 1;
     background: radial-gradient(74.22% 74.22% at 19.79% 22.42%, #FF5959 6.25%, #FF5959 51.56%, #DE0000 100%);
     border-radius: 100%;
@@ -127,7 +141,7 @@
     width: 50px;
     height: 50px;
     position: absolute;
-    right: -5vw;
+    right: -15vw;
     top: 45vh;
     z-index: 1;
     background: radial-gradient(74.22% 74.22% at 19.79% 22.42%, #FF5959 6.25%, #FF5959 51.56%, #DE0000 100%);
@@ -135,6 +149,7 @@
 
     @media (max-width: 1000px) {
         top: 34vh;
+        right: 1vw;
     }
 
     @media (max-width: 550px) {
@@ -199,9 +214,9 @@
     margin-top: 24vh;
     margin-right: 8vw;
     margin-left: 8vw;
-    width: 30%;
+    width: 100%;
     position: relative;
-    z-index: 1;
+    z-index: 2;
 
     @media (min-height: 800px) {
         margin-top: 20vh;
@@ -341,4 +356,8 @@
     background: #4b9a26 !important;
     color: white !important;
     min-width: 220px !important;
+}
+
+.relative {
+    position: relative;
 }

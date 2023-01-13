@@ -14,13 +14,13 @@
   width: 300px;
   height: 300px;
   position: absolute;
-  top: 75px;
+  top: 40px;
   right: -8vw;
   background: radial-gradient(74.22% 74.22% at 19.79% 22.42%, #FF5959 6.25%, #FF5959 51.56%, #DE0000 100%);
   border-radius: 100%;
   transform: rotate(81.57deg);
 
-  @media (max-width: 550px) {
+  @media (max-width: 1000px) {
     width: 80px;
     height: 80px;
     top: 62px;
@@ -127,7 +127,7 @@
 .link-dialog {
   position: absolute;
   bottom: 12vh;
-  left: 4vw;
+  left: 16vw;
   z-index: 5;
   display: flex;
   align-items: center;

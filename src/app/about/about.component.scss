@@ -3,7 +3,7 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    min-height: 90vh;
+    min-height: 75vh;
     position: relative;
     cursor: context-menu;
 
@@ -86,12 +86,13 @@
         line-height: 120%;
         margin-top: 46px;
         padding: 10px;
-        margin-bottom: 24px;
+        margin-bottom: 46px;
         border: 2px solid #FF5959;
         border-radius: 10px;
 
         @media (max-width: 1000px) {
             margin-top: 20px;
+            margin-bottom: 20px;
         }
 
         &::before {
