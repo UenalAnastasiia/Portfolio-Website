@@ -6,7 +6,7 @@
         <p>JavaScript | HTML | CSS</p>
         <span>Swimm with Sharky throw game based on object-oriented approach. Help Sharky to find coins and stay healthy so to fight against the angry endboss.</span>
         <div class="project-btn-box">
-            <a href="https://@anastasiia-uenal.developerakademie.net/sharky/index.html" target="_blank">
+            <a href="http://sharky.anastasiia-uenal.de" target="_blank">
                 <button mat-stroked-button color="warn" class="blob-btn"
                 (mouseenter)="mouseService.showLinkbyMouseOver('https://@anastasiia-uenal.developerakademie.net/sharky/index.html', 'assets/img/sharky_screen.PNG', 'sharky')">
                     Live Test
@@ -60,13 +60,13 @@
         </div>
     </div>
 
-    <mat-card *ngIf="mouseService.showLinkDialog && mouseService.name == 'sharky'" class="link-dialog" (mouseleave)="mouseService.showLinkDialog = false">
+    <!-- <mat-card *ngIf="mouseService.showLinkDialog && mouseService.name == 'sharky'" class="link-dialog" (mouseleave)="mouseService.showLinkDialog = false">
         <img src="{{ mouseService.linkImg }}" alt="">
         <div>
             <a href="{{ mouseService.linkURL }}"><button mat-stroked-button color="warn">Open here</button></a>
             <a href="{{ mouseService.linkURL }}" target="_blank"><button mat-stroked-button color="warn">Open in new tab</button></a>
         </div>
-    </mat-card>
+    </mat-card> -->
 
     <div class="project-img">
         <img src="assets/img/sharky.png">

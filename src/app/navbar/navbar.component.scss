@@ -27,6 +27,7 @@ a {
     padding: 6px;
     z-index: 2;
     text-decoration: none;
+    cursor: pointer;
 
     background-image: linear-gradient(#FF5959, #FF5959);
     background-size: 0 5px, auto;
@@ -47,7 +48,7 @@ a {
 .example-container {
     opacity: 0;
     visibility: hidden;
-    transition: opacity 750ms;
+    transition: visibility 0.5s, opacity 1s;
     height: 100vh;
     width: 100vw;
     max-width: 100%;
@@ -160,4 +161,8 @@ $burgerBarColor: #FF5959;
     -webkit-box-reflect: below 5px linear-gradient(to bottom,
             rgba(0, 0, 0, 0.0),
             rgba(0, 0, 0, 0.6));
+
+    @media (max-width: 850px) {
+        left: 2vw !important;
+    }
 }

@@ -1,3 +1,4 @@
+import { ViewportScroller } from '@angular/common';
 import { Component, OnInit, Input, EventEmitter, Output } from '@angular/core';
 
 @Component({
@@ -11,9 +12,17 @@ export class NavbarComponent implements OnInit {
 
   active = false;
 
+  constructor(private scroller: ViewportScroller) {}
+
   ngOnInit() {
     this.active = this.init || false;
   }
+
+
+  scrollToComponent(element: string) {
+    this.scroller.scrollToAnchor(`${element}`);
+  }
+
 
   menuToogle() {
     this.active = !this.active;

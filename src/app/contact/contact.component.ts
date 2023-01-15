@@ -33,10 +33,10 @@ export class ContactComponent implements OnInit {
 
 
   sendMail() {
-    this.contactForm.controls['name'].invalid ? this.nameFieldError = true : this.nameFieldError = false; 
+    this.contactForm.controls['name'].invalid ? this.nameFieldError = true : this.nameFieldError = false;
     this.contactForm.controls['email'].invalid ? this.emailFieldError = true : this.emailFieldError = false;
-    this.contactForm.controls['message'].invalid ? this.messageFieldError = true : this.messageFieldError = false;  
-    
+    this.contactForm.controls['message'].invalid ? this.messageFieldError = true : this.messageFieldError = false;
+
     if (this.contactForm.valid) {
       this.showSendMessage();
       this.cleanForm();
@@ -78,5 +78,14 @@ export class ContactComponent implements OnInit {
     if (this.activeBtn) {
       this.activeBtn = false;
     }
+  }
+
+
+  scrollOnTop() {
+    window.scroll({
+      top: 0,
+      left: 0,
+      behavior: 'smooth'
+    });
   }
 }

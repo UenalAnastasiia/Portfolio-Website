@@ -18,14 +18,14 @@
 
 <div class="scroll-btn-box">
     <div class="relative">
-        <a class="link" href="#aboutme">
+        <a class="link" (click)="scrollToComponent()">
             <span class="link__line"></span>
             <button mat-button color="warn">SCROLL</button>
         </a>
     </div>
 </div>
 
-<mat-card *ngIf="mouseService.showLinkDialog && mouseService.name == 'home'" class="link-dialog"
+<!-- <mat-card *ngIf="mouseService.showLinkDialog && mouseService.name == 'home'" class="link-dialog"
     (mouseleave)="mouseService.showLinkDialog = false">
     <img src="{{ mouseService.linkImg }}" alt="">
     <div>
@@ -33,7 +33,7 @@
         <a href="{{ mouseService.linkURL }}" target="_blank"><button mat-stroked-button color="warn">Open in new
                 tab</button></a>
     </div>
-</mat-card>
+</mat-card> -->
 
 <div class="icons-box">
     <a href="https://github.com/UenalAnastasiia" target="_blank"
@@ -43,13 +43,13 @@
         </button>
     </a>
 
-    <a href="#contact"
-        (mouseenter)="mouseService.showLinkbyMouseOver('#contact', 'assets/img/mail_screen.PNG', 'home')">
+    <a href="mailto:contact@anastasiia-uenal.de">
         <button mat-mini-fab><img src="assets/img/mail.png"></button>
     </a>
 
     <a href="https://www.linkedin.com/" target="_blank"
-        (mouseenter)="mouseService.showLinkbyMouseOver('https://www.linkedin.com/', 'assets/img/linkedin_screen.PNG', 'home')">
+        (mouseenter)="mouseService.showLinkbyMouseOver('https://www.linkedin.com/', 'assets/img/linkedin_screen.PNG', 'home')"
+        (mouseleave)="mouseService.showLinkDialog = false">
         <button mat-mini-fab><img src="assets/img/linkedin.png"></button></a>
 </div>
 

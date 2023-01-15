@@ -9,7 +9,7 @@
         <p>Angular | TypeScript | Firebase | SCSS</p>
         <span>Message manager inspired by the Slack. Create and comment threads, chat and communicate with other users in the App.</span>
         <div class="project-btn-box">
-            <a href="https://ua-slack-clone.web.app/login" target="_blank">
+            <a href="http://slack.anastasiia-uenal.de" target="_blank">
                 <button mat-stroked-button color="warn" class="blob-btn" 
                 (mouseenter)="mouseService.showLinkbyMouseOver('https://ua-slack-clone.web.app/login', 'assets/img/slack_screen.PNG', 'slack')">
                     Live Test
@@ -63,13 +63,13 @@
         </div>
     </div>
     
-    <mat-card *ngIf="mouseService.showLinkDialog && mouseService.name == 'slack'" class="link-dialog" (mouseleave)="mouseService.showLinkDialog = false">
+    <!-- <mat-card *ngIf="mouseService.showLinkDialog && mouseService.name == 'slack'" class="link-dialog" (mouseleave)="mouseService.showLinkDialog = false">
         <img src="{{ mouseService.linkImg }}" alt="">
         <div>
             <a href="{{ mouseService.linkURL }}"><button mat-stroked-button color="warn">Open here</button></a>
             <a href="{{ mouseService.linkURL }}" target="_blank"><button mat-stroked-button color="warn">Open in new tab</button></a>
         </div>
-    </mat-card>
+    </mat-card> -->
     
     <div class="big-circle"></div>
 </div>
