@@ -50,7 +50,7 @@ export class ContactComponent implements OnInit {
     fd.append('name', this.contactForm.controls['name'].value);
     fd.append('message', this.contactForm.controls['message'].value);
     fd.append('email', this.contactForm.controls['email'].value);
-    await fetch('https://@anastasiia-uenal.developerakademie.net/portfolio/send_mail/send_mail.php',
+    await fetch('https://@anastasiia-uenal.de/anastasiia-uenal.de/send_mail/send_mail.php',
       {
         method: 'POST',
         body: fd

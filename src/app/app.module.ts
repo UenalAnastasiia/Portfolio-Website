@@ -28,6 +28,7 @@ import { ImprintComponent } from './imprint/imprint.component';
 import { MatDialogModule } from '@angular/material/dialog';
 import { FormsModule }   from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
+import { ProjectCtrackComponent } from './works/project-ctrack/project-ctrack.component';
 
 @NgModule({
   declarations: [
@@ -42,7 +43,8 @@ import { ReactiveFormsModule } from '@angular/forms';
     ProjectCrmComponent,
     ContactComponent,
     FooterComponent,
-    ImprintComponent
+    ImprintComponent,
+    ProjectCtrackComponent
   ],
   imports: [
     BrowserModule,
