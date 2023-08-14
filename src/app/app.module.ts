@@ -29,6 +29,7 @@ import { MatDialogModule } from '@angular/material/dialog';
 import { FormsModule }   from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
 import { ProjectCtrackComponent } from './works/project-ctrack/project-ctrack.component';
+import { ProjectJoinComponent } from './works/project-join/project-join.component';
 
 @NgModule({
   declarations: [
@@ -44,7 +45,8 @@ import { ProjectCtrackComponent } from './works/project-ctrack/project-ctrack.co
     ContactComponent,
     FooterComponent,
     ImprintComponent,
-    ProjectCtrackComponent
+    ProjectCtrackComponent,
+    ProjectJoinComponent
   ],
   imports: [
     BrowserModule,
