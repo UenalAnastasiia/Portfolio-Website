@@ -23,13 +23,13 @@ export class SkillsComponent implements OnInit {
     },
     
     {
-      'img': 'html.png',
-      'name': 'HTML'
+      'img': 'react.png',
+      'name': 'React'
     },
     
     {
-      'img': 'css.png',
-      'name': 'CSS'
+      'img': 'html.png',
+      'name': 'HTML / CSS'
     },
     
     {

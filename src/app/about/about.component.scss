@@ -120,20 +120,20 @@
             }
         }
     }
+}
 
-    a {
-        text-decoration: none;
-        color: #FF5959;
-        font-weight: 700;
-        background-image: linear-gradient(#FF5959, #FF5959);
-        background-size: 0 5px, auto;
-        background-repeat: no-repeat;
-        background-position: center bottom;
-        transition: all .2s ease-out;
+.cv-link {
+    text-decoration: none;
+    color: #FF5959;
+    font-weight: 700;
+    background-image: linear-gradient(#FF5959, #FF5959);
+    background-size: 0 5px, auto;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    transition: all .2s ease-out;
 
-        &:hover {
-            background-size: 100% 2px, auto;
-        }
+    &:hover {
+        background-size: 100% 2px, auto;
     }
 }
 
