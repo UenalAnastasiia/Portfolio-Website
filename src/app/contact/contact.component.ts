@@ -51,12 +51,17 @@ export class ContactComponent implements OnInit {
     fd.append('message', this.contactForm.controls['message'].value);
     fd.append('email', this.contactForm.controls['email'].value);
 
-    await fetch('https://@anastasiia-uenal.developerakademie.net/portfolio/send_mail/send_mail.php',
-      {
-        method: 'POST',
-        body: fd
-      });
-    console.log('Email ', this.contactForm.controls['message'].value);
+    fetch("https://formspree.io/f/xjvnbrbl", {
+      method: "POST",
+      body: fd,
+      headers: {
+          'Accept': 'application/json'
+      }
+    }).then(() => {
+        console.log('Thank you! Send E-Mail complete');
+    }).catch((error) => {
+        console.log(error);
+    });
   }
 
 
