@@ -30,6 +30,7 @@ import { FormsModule }   from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
 import { ProjectCtrackComponent } from './works/project-ctrack/project-ctrack.component';
 import { ProjectJoinComponent } from './works/project-join/project-join.component';
+import { ProjectWtrackComponent } from './works/project-wtrack/project-wtrack.component';
 
 @NgModule({
   declarations: [
@@ -46,7 +47,8 @@ import { ProjectJoinComponent } from './works/project-join/project-join.componen
     FooterComponent,
     ImprintComponent,
     ProjectCtrackComponent,
-    ProjectJoinComponent
+    ProjectJoinComponent,
+    ProjectWtrackComponent
   ],
   imports: [
     BrowserModule,

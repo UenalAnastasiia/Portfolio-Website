@@ -10,8 +10,7 @@
         <span>An easy CRM Tool for small businesses. Create new contacts, add tasks and stay organized.</span>
         <div class="project-btn-box">
             <a href="https://ua-simple-crm.web.app/" target="_blank">
-                <button mat-stroked-button color="warn" class="blob-btn"
-                (mouseenter)="mouseService.showLinkbyMouseOver('https://ua-simple-crm.web.app/home', 'assets/img/crm_screen.PNG', 'crm')">
+                <button mat-stroked-button color="warn" class="blob-btn">
                     Live Test
                     <span class="blob-btn__inner">
                         <span class="blob-btn__blobs">
@@ -36,8 +35,7 @@
             </a>
 
             <a href="https://github.com/UenalAnastasiia/Simple-CRM" target="_blank">
-                <button mat-stroked-button color="warn" class="blob-btn"
-                (mouseenter)="mouseService.showLinkbyMouseOver('https://github.com/UenalAnastasiia/Simple-CRM', 'assets/img/crmgit_screen.PNG', 'crm')">
+                <button mat-stroked-button color="warn" class="blob-btn">
                     GitHub
                     <span class="blob-btn__inner">
                         <span class="blob-btn__blobs">
@@ -61,15 +59,7 @@
                 </svg>
             </a>
         </div>
-
-        <!-- <mat-card *ngIf="mouseService.showLinkDialog && mouseService.name == 'crm'" class="link-dialog" (mouseleave)="mouseService.showLinkDialog = false">
-            <img src="{{ mouseService.linkImg }}" alt="">
-            <div>
-                <a href="{{ mouseService.linkURL }}"><button mat-stroked-button color="warn">Open here</button></a>
-                <a href="{{ mouseService.linkURL }}" target="_blank"><button mat-stroked-button color="warn">Open in new tab</button></a>
-            </div>
-        </mat-card> -->
-
+        
         <div class="small-circle"></div>
     </div>
 </div>

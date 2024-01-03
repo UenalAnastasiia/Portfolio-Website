@@ -10,8 +10,7 @@
         <span>Message manager inspired by the Slack. Create and comment threads, chat and communicate with other users in the App.</span>
         <div class="project-btn-box">
             <a href="https://ua-slack-clone.web.app" target="_blank">
-                <button mat-stroked-button color="warn" class="blob-btn" 
-                (mouseenter)="mouseService.showLinkbyMouseOver('https://ua-slack-clone.web.app', 'assets/img/slack_screen.PNG', 'slack')">
+                <button mat-stroked-button color="warn" class="blob-btn">
                     Live Test
                     <span class="blob-btn__inner">
                         <span class="blob-btn__blobs">
@@ -36,8 +35,7 @@
             </a>
 
             <a href="https://github.com/UenalAnastasiia/Slack-Clone" target="_blank">
-                <button mat-stroked-button color="warn" class="blob-btn"
-                (mouseenter)="mouseService.showLinkbyMouseOver('https://github.com/UenalAnastasiia/Slack-Clone', 'assets/img/slackgit_screen.PNG', 'slack')">
+                <button mat-stroked-button color="warn" class="blob-btn">
                     GitHub
                     <span class="blob-btn__inner">
                         <span class="blob-btn__blobs">
@@ -62,14 +60,6 @@
             </a>
         </div>
     </div>
-    
-    <!-- <mat-card *ngIf="mouseService.showLinkDialog && mouseService.name == 'slack'" class="link-dialog" (mouseleave)="mouseService.showLinkDialog = false">
-        <img src="{{ mouseService.linkImg }}" alt="">
-        <div>
-            <a href="{{ mouseService.linkURL }}"><button mat-stroked-button color="warn">Open here</button></a>
-            <a href="{{ mouseService.linkURL }}" target="_blank"><button mat-stroked-button color="warn">Open in new tab</button></a>
-        </div>
-    </mat-card> -->
     
     <div class="big-circle"></div>
 </div>

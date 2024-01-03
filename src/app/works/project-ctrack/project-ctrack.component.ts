@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { MouseOverService } from '../../services/mouse-over.service';
 
 @Component({
   selector: 'app-project-ctrack',
@@ -8,7 +7,7 @@ import { MouseOverService } from '../../services/mouse-over.service';
 })
 export class ProjectCtrackComponent implements OnInit {
 
-  constructor(public mouseService: MouseOverService) { }
+  constructor() { }
 
   ngOnInit(): void {
   }
