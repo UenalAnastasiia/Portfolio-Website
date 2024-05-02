@@ -55,17 +55,11 @@
   
     img {
       width: 600px;
-      border-top-left-radius: 60px;
-      border-top-right-radius: 60px;
+      border-radius: 60px;
   
       @media (max-width: 1320px) {
         padding-bottom: 28px;
         box-shadow: 0px 15px 10px -15px #FF5959;
-      }
-  
-      &:hover {
-        transform: scale3d(1.1, 1.1, 1.1);
-        transition: 225ms ease-in-out;
       }
     }
   }
@@ -73,7 +67,8 @@
   .project-description {
     width: 40%;
     margin-left: 5vw;
-    margin-top: 14vh;
+    margin-top: 8vh;
+    margin-bottom: 40px;
   
     @media (min-height: 800px) {
       margin-top: 10vh;

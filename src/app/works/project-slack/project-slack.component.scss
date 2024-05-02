@@ -11,13 +11,7 @@
 .project-img {
   img {
     width: 600px;
-    border-top-left-radius: 60px;
-    border-top-right-radius: 60px;
-
-    &:hover {
-      transform: scale3d(1.1, 1.1, 1.1);
-      transition: 225ms ease-in-out;
-    }
+    border-radius: 60px;
   }
 }
 
@@ -25,6 +19,7 @@
   width: 40%;
   margin-left: 5vw;
   margin-top: 14vh;
+  margin-bottom: 40px;
 
   @media (min-height: 800px) {
     margin-top: 10vh;
