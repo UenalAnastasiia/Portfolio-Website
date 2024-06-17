@@ -31,6 +31,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { ProjectCtrackComponent } from './works/project-ctrack/project-ctrack.component';
 import { ProjectJoinComponent } from './works/project-join/project-join.component';
 import { ProjectWtrackComponent } from './works/project-wtrack/project-wtrack.component';
+import { ProjectVideoflixComponent } from './works/project-videoflix/project-videoflix.component';
 
 @NgModule({
   declarations: [
@@ -48,7 +49,8 @@ import { ProjectWtrackComponent } from './works/project-wtrack/project-wtrack.co
     ImprintComponent,
     ProjectCtrackComponent,
     ProjectJoinComponent,
-    ProjectWtrackComponent
+    ProjectWtrackComponent,
+    ProjectVideoflixComponent
   ],
   imports: [
     BrowserModule,
