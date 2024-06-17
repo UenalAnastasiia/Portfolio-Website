@@ -13,18 +13,33 @@ export class SkillsComponent implements OnInit {
     },
 
     {
+      'img': 'typescript.png',
+      'name': 'TypeScript'
+    },
+
+    {
       'img': 'angular.png',
       'name': 'Angular'
     },
     
     {
-      'img': 'typescript.png',
-      'name': 'TypeScript'
-    },
-    
-    {
       'img': 'react.png',
       'name': 'React'
+    },
+
+    {
+      'img': 'python.png',
+      'name': 'Python'
+    },
+
+    {
+      'img': 'django.png',
+      'name': 'Django'
+    },
+
+    {
+      'img': 'datenbank.png',
+      'name': 'Database'
     },
     
     {
@@ -53,9 +68,19 @@ export class SkillsComponent implements OnInit {
     },
 
     {
+      'img': 'redis.png',
+      'name': 'Redis'
+    },
+
+    {
+      'img': 'linux.png',
+      'name': 'Linux'
+    },
+
+    {
       'img': 'firebase.png',
       'name': 'Firebase'
-    }
+    },
   ]
 
   constructor() { }
