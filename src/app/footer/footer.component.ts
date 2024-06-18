@@ -8,6 +8,7 @@ import { ImprintComponent } from '../imprint/imprint.component';
   styleUrls: ['./footer.component.scss']
 })
 export class FooterComponent implements OnInit {
+  currentYear: number = new Date().getFullYear();
 
   constructor(public dialog: MatDialog) { }
 

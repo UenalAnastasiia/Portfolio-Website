@@ -1,7 +1,7 @@
 <header>
         <a (click)="scrollToComponent('aboutme')">About me</a>
         <a (click)="scrollToComponent('skills')">Skills set</a>
-        <a (click)="scrollToComponent('myworks')">My Work</a>
+        <a (click)="scrollToComponent('myworks')">My Projects</a>
 </header>
 
 <div class="burger-menu example-icon" [class.active]="active" (click)="menuToogle()">
@@ -20,6 +20,6 @@
         </div>
         <a (click)="scrollToComponent('aboutme'); menuToogle()">About me</a>
         <a (click)="scrollToComponent('skills'); menuToogle()">Skills set</a>
-        <a (click)="scrollToComponent('myworks'); menuToogle()">My Work</a>
+        <a (click)="scrollToComponent('myworks'); menuToogle()">My Projects</a>
         <a (click)="scrollToComponent('contact'); menuToogle()">Contact</a>
 </div>
