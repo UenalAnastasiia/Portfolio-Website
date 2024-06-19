@@ -1,3 +1,4 @@
+import { ViewportScroller } from '@angular/common';
 import { Injectable } from '@angular/core';
 
 @Injectable({
@@ -9,7 +10,7 @@ export class MouseOverService {
   showLinkDialog: boolean = false;
   name: string;
 
-  constructor() { }
+  constructor(private scroller: ViewportScroller) { }
 
 
   showLinkbyMouseOver(link: string, img: string, name: string) {
@@ -17,5 +18,10 @@ export class MouseOverService {
     this.linkURL = link;
     this.linkImg = img;
     this.name = name;
+  }
+
+
+  scrollToComponent(element: string) {
+    this.scroller.scrollToAnchor(`${element}`);
   }
 }

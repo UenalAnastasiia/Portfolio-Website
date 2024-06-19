@@ -1,7 +1,7 @@
 <header>
-        <a (click)="scrollToComponent('aboutme')">About me</a>
-        <a (click)="scrollToComponent('skills')">Skills set</a>
-        <a (click)="scrollToComponent('myworks')">My Projects</a>
+        <a (click)="service.scrollToComponent('aboutme')">About me</a>
+        <a (click)="service.scrollToComponent('skills')">Skills set</a>
+        <a (click)="service.scrollToComponent('myworks')">My Projects</a>
 </header>
 
 <div class="burger-menu example-icon" [class.active]="active" (click)="menuToogle()">
@@ -18,8 +18,8 @@
                         <div class="burger-inner"></div>
                 </div>
         </div>
-        <a (click)="scrollToComponent('aboutme'); menuToogle()">About me</a>
-        <a (click)="scrollToComponent('skills'); menuToogle()">Skills set</a>
-        <a (click)="scrollToComponent('myworks'); menuToogle()">My Projects</a>
-        <a (click)="scrollToComponent('contact'); menuToogle()">Contact</a>
+        <a (click)="service.scrollToComponent('aboutme'); menuToogle()">About me</a>
+        <a (click)="service.scrollToComponent('skills'); menuToogle()">Skills set</a>
+        <a (click)="service.scrollToComponent('myworks'); menuToogle()">My Projects</a>
+        <a (click)="service.scrollToComponent('contact'); menuToogle()">Contact</a>
 </div>

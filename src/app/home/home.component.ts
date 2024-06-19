@@ -1,4 +1,3 @@
-import { ViewportScroller } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 import { MouseOverService } from '../services/mouse-over.service';
 
@@ -9,13 +8,9 @@ import { MouseOverService } from '../services/mouse-over.service';
 })
 export class HomeComponent implements OnInit {
 
-  constructor(public mouseService: MouseOverService, private scroller: ViewportScroller) { }
+  constructor(public service: MouseOverService) { }
 
 
   ngOnInit(): void { }
 
-
-  scrollToComponent() {
-    this.scroller.scrollToAnchor('aboutme');
-  }
 }

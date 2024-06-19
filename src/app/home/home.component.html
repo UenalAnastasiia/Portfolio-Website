@@ -18,26 +18,30 @@
 
 <div class="scroll-btn-box">
     <div class="relative">
-        <a class="link" (click)="scrollToComponent()">
+        <a class="link" (click)="service.scrollToComponent('aboutme')">
             <span class="link__line"></span>
             <button mat-button color="warn">SCROLL</button>
         </a>
     </div>
 </div>
 
-<!-- <mat-card *ngIf="mouseService.showLinkDialog && mouseService.name == 'home'" class="link-dialog"
-    (mouseleave)="mouseService.showLinkDialog = false">
-    <img src="{{ mouseService.linkImg }}" alt="">
+<button class="send-btn" type="button" (click)="service.scrollToComponent('contact')">
+    <mat-icon>mail</mat-icon>
+</button>
+
+<!-- <mat-card *ngIf="service.showLinkDialog && service.name == 'home'" class="link-dialog"
+    (mouseleave)="service.showLinkDialog = false">
+    <img src="{{ service.linkImg }}" alt="">
     <div>
-        <a href="{{ mouseService.linkURL }}"><button mat-stroked-button color="warn">Open here</button></a>
-        <a href="{{ mouseService.linkURL }}" target="_blank"><button mat-stroked-button color="warn">Open in new
+        <a href="{{ service.linkURL }}"><button mat-stroked-button color="warn">Open here</button></a>
+        <a href="{{ service.linkURL }}" target="_blank"><button mat-stroked-button color="warn">Open in new
                 tab</button></a>
     </div>
 </mat-card> -->
 
 <div class="icons-box">
     <a href="https://github.com/UenalAnastasiia" target="_blank"
-        (mouseenter)="mouseService.showLinkbyMouseOver('https://github.com/UenalAnastasiia', 'assets/img/github_screen.PNG', 'home')">
+        (mouseenter)="service.showLinkbyMouseOver('https://github.com/UenalAnastasiia', 'assets/img/github_screen.PNG', 'home')">
         <button mat-mini-fab>
             <img src="assets/img/github.png">
         </button>
@@ -48,8 +52,8 @@
     </a>
 
     <a href="https://www.linkedin.com/in/anastasiia-u-7b841b148/" target="_blank"
-        (mouseenter)="mouseService.showLinkbyMouseOver('https://www.linkedin.com/', 'assets/img/linkedin_screen.PNG', 'home')"
-        (mouseleave)="mouseService.showLinkDialog = false">
+        (mouseenter)="service.showLinkbyMouseOver('https://www.linkedin.com/', 'assets/img/linkedin_screen.PNG', 'home')"
+        (mouseleave)="service.showLinkDialog = false">
         <button mat-mini-fab><img src="assets/img/linkedin.png"></button></a>
 </div>
 

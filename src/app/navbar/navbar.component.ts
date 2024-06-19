@@ -1,5 +1,5 @@
-import { ViewportScroller } from '@angular/common';
 import { Component, OnInit, Input, EventEmitter, Output } from '@angular/core';
+import { MouseOverService } from '../services/mouse-over.service';
 
 @Component({
   selector: 'app-navbar',
@@ -12,15 +12,10 @@ export class NavbarComponent implements OnInit {
 
   active = false;
 
-  constructor(private scroller: ViewportScroller) {}
+  constructor(public service: MouseOverService) {}
 
   ngOnInit() {
     this.active = this.init || false;
-  }
-
-
-  scrollToComponent(element: string) {
-    this.scroller.scrollToAnchor(`${element}`);
   }
 
 
